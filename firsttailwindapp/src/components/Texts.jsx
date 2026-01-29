@@ -1,6 +1,7 @@
 import { makeClassName } from './textUtil'
 
-export const Title = ({ className: _className, numberOfLines, ...props }) => {
+export const Title = ({ className: _className, numberOfLines, ...props }) => { 
+  // whitespace-pre-line : jsx 코드안에 포함된 공백문자는 삭제하고 줄바꿈 문자는 유지
   const className = makeClassName(
     'font-bold text-5xl text-center whitespace-pre-line',
     _className,
